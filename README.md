@@ -22,11 +22,16 @@ Explanation of each tool can be found on the links below:
 
 ```
 git clone https://github.com/oryanfarjon/bigpanda-docker.git
-cd https://github.com/oryanfarjon/bigpanda-docker
-pip install -r requirements.txt
+pip install -r bigpanda-docker/requirements.txt
 ```
-1. After installing requirements and pip, make sure you copy deployment.py and docker-compose.yml to your project root directory.
-2. Deploy the application using the command below:
+## Clone BigPanda repo and copy files between repos
+```
+git clone https://github.com/bigpandaio/ops-exercise.git
+cp bigpanda-docker/deployment.py ops-exercise/.
+cp bigpanda-docker/docker-compose.yml ops-exercise/.
+cd ops-exercise
+```
+After installing pip requirements and copied the files above to your project root directory, Deploy the application using the command below:
 ```
 python deployment.py
 ```
