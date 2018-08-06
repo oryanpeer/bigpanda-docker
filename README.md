@@ -42,3 +42,10 @@ After successful deployment, the node app will be available on port 3000 on the 
 * healthcheck: http://localhost:3000/health
 
 If everything is working properly you will be able to browse the node application URL and see Panda's images.
+
+## Stop container
+To stop the containers and remove the application use the following commands(in your root directory where the docker-compose.yml located):
+```
+docker-compose stop
+docker-compose rm
+```
